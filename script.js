@@ -1,20 +1,3 @@
-// Typing effect on hero tagline
-const text = "Protecting What Matters Most";
-const typedTextElem = document.getElementById("typed-text");
-let index = 0;
-
-function type() {
-  if (index < text.length) {
-    typedTextElem.textContent += text.charAt(index);
-    index++;
-    setTimeout(type, 120);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  type();
-});
-
 // Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
@@ -36,4 +19,9 @@ window.onscroll = function () {
     backToTopBtn.style.display = "block";
   } else {
     backToTopBtn.style.display = "none";
- 
+  }
+};
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({top: 0, behavior: "smooth"});
+});

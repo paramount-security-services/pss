@@ -196,10 +196,6 @@ footer {
   letter-spacing: 0.5px;
 }
 
-@keyframes blink {
-  50% { background-color: transparent; }
-}
-
 /* Back to Top Button */
 #backToTop {
   display: none;

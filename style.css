@@ -196,21 +196,6 @@ footer {
   letter-spacing: 0.5px;
 }
 
-/* Cursor for typing effect */
-.cursor {
-  display: inline-block;
-  background-color: #ff6f61;
-  margin-left: 2px;
-  width: 2px;
-  animation: blink 0.7s steps(1) infinite;
-  height: 1.3em;
-  vertical-align: bottom;
-}
-
-@keyframes blink {
-  50% { background-color: transparent; }
-}
-
 /* Back to Top Button */
 #backToTop {
   display: none;
